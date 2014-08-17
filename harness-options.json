@@ -1,0 +1,839 @@
+{
+ "allTestModules": [], 
+ "enable_e10s": false, 
+ "jetpackID": "jid0-VGlMnRUxwZDHPvcDOoR4JMOlklE@jetpack", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "force-fill-forms/lib/main.js", 
+ "manifest": {
+  "addon-sdk/lib/sdk/addon/runner.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "195d0364bcf117d63eb9f96ce63a4e01d518e9d537e4929489b402307ef764cc", 
+   "moduleName": "sdk/addon/runner", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../l10n/html": {
+     "path": "addon-sdk/lib/sdk/l10n/html.js"
+    }, 
+    "../l10n/loader": {
+     "path": "addon-sdk/lib/sdk/l10n/loader.js"
+    }, 
+    "../l10n/prefs": {
+     "path": "addon-sdk/lib/sdk/l10n/prefs.js"
+    }, 
+    "../self": {
+     "path": "addon-sdk/lib/sdk/self.js"
+    }, 
+    "../system": {
+     "path": "addon-sdk/lib/sdk/system.js"
+    }, 
+    "../system/events": {
+     "path": "addon-sdk/lib/sdk/system/events.js"
+    }, 
+    "../system/globals": {
+     "path": "addon-sdk/lib/sdk/system/globals.js"
+    }, 
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "@loader/options": {
+     "path": "@loader/options"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }, 
+    "toolkit/loader": {
+     "path": "addon-sdk/lib/toolkit/loader.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/base64.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "6f07677fd1005e526726316fc3e373016865a6ba54ca50c28e74386bd21f2f53", 
+   "moduleName": "sdk/base64", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/console/plain-text.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "08705babca84861a8860a0f3e9ec24402e389f18cfb9454f230b837f39199a53", 
+   "moduleName": "sdk/console/plain-text", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../self": {
+     "path": "addon-sdk/lib/sdk/self.js"
+    }, 
+    "./traceback": {
+     "path": "addon-sdk/lib/sdk/console/traceback.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/console/traceback.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "c513211853eca2312679c039fef12db548349ee5437cd948ff3a2edccc88eb67", 
+   "moduleName": "sdk/console/traceback", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../net/url": {
+     "path": "addon-sdk/lib/sdk/net/url.js"
+    }, 
+    "../url": {
+     "path": "addon-sdk/lib/sdk/url.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/core/heritage.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "879c9f4e0e59b80edc2b47db210da97a051c54654b3d153a598994b3c0fe8bf7", 
+   "moduleName": "sdk/core/heritage", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/core/namespace.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "7e8f934f7b0e0881b169d9aee0978264356ee7c29c0914dc397c3a12b5c5bbc3", 
+   "moduleName": "sdk/core/namespace", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/core/promise.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "cc4e2c11b2913d275029a24c780e58be0af153a91930d543441bbf0c76cc5cd5", 
+   "moduleName": "sdk/core/promise", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/errors.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "c530a937f5e1332f787696abb87a4aaa88a3a0d0b1e3f3958b4fa15284a05602", 
+   "moduleName": "sdk/deprecated/errors", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/events.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "629d8a6d238fb965efef47b334001367d91d64563d886644f5e0fc6105afa657", 
+   "moduleName": "sdk/deprecated/events", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./light-traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/light-traits.js"
+    }, 
+    "./traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/traits.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/events/assembler.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "5f3e9c1519da8981b2ba0184364c4782fe5b8eb332631391c402f6ee6c7b6992", 
+   "moduleName": "sdk/deprecated/events/assembler", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../../dom/events": {
+     "path": "addon-sdk/lib/sdk/dom/events.js"
+    }, 
+    "../light-traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/light-traits.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/light-traits.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "76dc0de7ef28a1529e65d74744ba4b451abe1d51dc36da730bd83372b8eff4e2", 
+   "moduleName": "sdk/deprecated/light-traits", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/observer-service.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "ec86fc649f165b4d4e9628ba08c673ac98aa61cdf72130ec9296fa49acf3f64c", 
+   "moduleName": "sdk/deprecated/observer-service", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../core/namespace": {
+     "path": "addon-sdk/lib/sdk/core/namespace.js"
+    }, 
+    "../self": {
+     "path": "addon-sdk/lib/sdk/self.js"
+    }, 
+    "../system/events": {
+     "path": "addon-sdk/lib/sdk/system/events.js"
+    }, 
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/traits.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "156890940fbf4fb224a1ccf75f33b95735153fa3dd1716cb37031bfd22bfb6a0", 
+   "moduleName": "sdk/deprecated/traits", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./traits/core": {
+     "path": "addon-sdk/lib/sdk/deprecated/traits/core.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/traits/core.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "c851515dd7895ac1ee88554cf00cc9dbbd9bb10864eaaa96ed4102336cffa94a", 
+   "moduleName": "sdk/deprecated/traits/core", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/deprecated/window-utils.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "23d4bf933c4ae3279c8705886315f864c6f3b6fb39cdbe4dd2dcf134e12f1fa0", 
+   "moduleName": "sdk/deprecated/window-utils", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../deprecated/errors": {
+     "path": "addon-sdk/lib/sdk/deprecated/errors.js"
+    }, 
+    "../deprecated/events": {
+     "path": "addon-sdk/lib/sdk/deprecated/events.js"
+    }, 
+    "../deprecated/traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/traits.js"
+    }, 
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "../util/deprecate": {
+     "path": "addon-sdk/lib/sdk/util/deprecate.js"
+    }, 
+    "../window/utils": {
+     "path": "addon-sdk/lib/sdk/window/utils.js"
+    }, 
+    "./errors": {
+     "path": "addon-sdk/lib/sdk/deprecated/errors.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }, 
+    "window/utils": {
+     "path": "addon-sdk/lib/sdk/window/utils.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/dom/events.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "73a6c1fc5518b790eccddcf2d46a4cddc51de38ac6e6ee6696c19268b476138c", 
+   "moduleName": "sdk/dom/events", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/hotkeys.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "763a1acea62f3e000da45097db117c5cf35617feee1247bb66383c24e54e61e9", 
+   "moduleName": "sdk/hotkeys", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./keyboard/hotkeys": {
+     "path": "addon-sdk/lib/sdk/keyboard/hotkeys.js"
+    }, 
+    "./keyboard/utils": {
+     "path": "addon-sdk/lib/sdk/keyboard/utils.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/io/byte-streams.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "b30528048d9f46946d52480e3d5706070650f42d639f400be8278939d5a2c927", 
+   "moduleName": "sdk/io/byte-streams", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/io/file.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "0012eaa883989ead77006e2f0e4069fc502bcbb99f9c38d84ee1a0d40e4e1e98", 
+   "moduleName": "sdk/io/file", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./byte-streams": {
+     "path": "addon-sdk/lib/sdk/io/byte-streams.js"
+    }, 
+    "./text-streams": {
+     "path": "addon-sdk/lib/sdk/io/text-streams.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/io/text-streams.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "6c4b69be6b2e1a99f4f5b3a355a1276e07726a994dc0fd6d7a8e3d0b47b9df35", 
+   "moduleName": "sdk/io/text-streams", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/keyboard/hotkeys.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "b45c71c13b9c06ace6c9515a618cd0e6aee3ee9b631a74cd81dd88ce8aff6894", 
+   "moduleName": "sdk/keyboard/hotkeys", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./observer": {
+     "path": "addon-sdk/lib/sdk/keyboard/observer.js"
+    }, 
+    "./utils": {
+     "path": "addon-sdk/lib/sdk/keyboard/utils.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/keyboard/observer.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "cc0dd26756722b78244f658e24a471c42fe52757f0d8427bba9fa2dc101049a5", 
+   "moduleName": "sdk/keyboard/observer", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../deprecated/events": {
+     "path": "addon-sdk/lib/sdk/deprecated/events.js"
+    }, 
+    "../deprecated/events/assembler": {
+     "path": "addon-sdk/lib/sdk/deprecated/events/assembler.js"
+    }, 
+    "../deprecated/light-traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/light-traits.js"
+    }, 
+    "../deprecated/window-utils": {
+     "path": "addon-sdk/lib/sdk/deprecated/window-utils.js"
+    }, 
+    "../window/utils": {
+     "path": "addon-sdk/lib/sdk/window/utils.js"
+    }, 
+    "../windows/observer": {
+     "path": "addon-sdk/lib/sdk/windows/observer.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/keyboard/utils.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "f455dccc92b056aef231c86ab2489c7bc8e1363b566759b605a7fff5e0f3ee59", 
+   "moduleName": "sdk/keyboard/utils", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../lang/type": {
+     "path": "addon-sdk/lib/sdk/lang/type.js"
+    }, 
+    "../system/runtime": {
+     "path": "addon-sdk/lib/sdk/system/runtime.js"
+    }, 
+    "../util/array": {
+     "path": "addon-sdk/lib/sdk/util/array.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/l10n/core.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "db3d5ef6c49cdd355d888d4722663bc269cdecf8cc40743d92c2aaf37edde58a", 
+   "moduleName": "sdk/l10n/core", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "@l10n/data": {
+     "path": "@l10n/data"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/l10n/html.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "862173fc2b1c754c7502e5191c6edd0049b78477167d3f8290c284ea4a6dc626", 
+   "moduleName": "sdk/l10n/html", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../self": {
+     "path": "addon-sdk/lib/sdk/self.js"
+    }, 
+    "../system/events": {
+     "path": "addon-sdk/lib/sdk/system/events.js"
+    }, 
+    "./core": {
+     "path": "addon-sdk/lib/sdk/l10n/core.js"
+    }, 
+    "api-utils/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/l10n/loader.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "d060b38b68328741f2e419d47d721657d145917c3fbb8e3f2e012d5809af8000", 
+   "moduleName": "sdk/l10n/loader", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../core/promise": {
+     "path": "addon-sdk/lib/sdk/core/promise.js"
+    }, 
+    "../net/url": {
+     "path": "addon-sdk/lib/sdk/net/url.js"
+    }, 
+    "./locale": {
+     "path": "addon-sdk/lib/sdk/l10n/locale.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/l10n/locale.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "fd01d15cd42c54fc69c6927f4ef3fa95f888c6944f19788815bc211acfa81281", 
+   "moduleName": "sdk/l10n/locale", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../preferences/service": {
+     "path": "addon-sdk/lib/sdk/preferences/service.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/l10n/prefs.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "86e662cc21ef6110f3e88e3bd95508e27040815575f9f84af31fe22658c72a33", 
+   "moduleName": "sdk/l10n/prefs", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../deprecated/observer-service": {
+     "path": "addon-sdk/lib/sdk/deprecated/observer-service.js"
+    }, 
+    "../self": {
+     "path": "addon-sdk/lib/sdk/self.js"
+    }, 
+    "./core": {
+     "path": "addon-sdk/lib/sdk/l10n/core.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/lang/type.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "b739f2cad69d090967a7eea78b1b57cf4226435d26fc4e2d760c3cc57bd6957b", 
+   "moduleName": "sdk/lang/type", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/loader/cuddlefish.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "722f65a90185993db4f8f2445426bedf8b159aa6950995c4666e40c5be1b2bd4", 
+   "moduleName": "sdk/loader/cuddlefish", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }, 
+    "sdk/addon/runner": {
+     "path": "addon-sdk/lib/sdk/addon/runner.js"
+    }, 
+    "toolkit/loader": {
+     "path": "addon-sdk/lib/toolkit/loader.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/net/url.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "d56f83cd1cd8ded9e9b8d8a33c8e78b2ecd8dca0fbc59b86d87f053b15ef0245", 
+   "moduleName": "sdk/net/url", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../core/promise": {
+     "path": "addon-sdk/lib/sdk/core/promise.js"
+    }, 
+    "../util/object": {
+     "path": "addon-sdk/lib/sdk/util/object.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/platform/xpcom.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "31c117dcc15dc66938884419e1504727c28964f5ed5c0a0bbc94c4309109d6de", 
+   "moduleName": "sdk/platform/xpcom", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../core/heritage": {
+     "path": "addon-sdk/lib/sdk/core/heritage.js"
+    }, 
+    "../system/runtime": {
+     "path": "addon-sdk/lib/sdk/system/runtime.js"
+    }, 
+    "../system/unload": {
+     "path": "addon-sdk/lib/sdk/system/unload.js"
+    }, 
+    "../system/xul-app": {
+     "path": "addon-sdk/lib/sdk/system/xul-app.js"
+    }, 
+    "../util/object": {
+     "path": "addon-sdk/lib/sdk/util/object.js"
+    }, 
+    "../util/uuid": {
+     "path": "addon-sdk/lib/sdk/util/uuid.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/preferences/service.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "8832a3f0752a852a211966b846e1a424419e53c4422e3b76ff6667019dea9e98", 
+   "moduleName": "sdk/preferences/service", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/self.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "c9575d7204d353d7337db414379b16e2161d16a738eeb8dbb2e433ff8492a37e", 
+   "moduleName": "sdk/self", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./net/url": {
+     "path": "addon-sdk/lib/sdk/net/url.js"
+    }, 
+    "@loader/options": {
+     "path": "@loader/options"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "5cb7e73092e9e9c840457099ac440fdb384b8b1255c110802fc5d6f3d8912883", 
+   "moduleName": "sdk/system", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./io/file": {
+     "path": "addon-sdk/lib/sdk/io/file.js"
+    }, 
+    "./system/environment": {
+     "path": "addon-sdk/lib/sdk/system/environment.js"
+    }, 
+    "./system/runtime": {
+     "path": "addon-sdk/lib/sdk/system/runtime.js"
+    }, 
+    "@loader/options": {
+     "path": "@loader/options"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/environment.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "dfde6a76e88790d5a91a852d131e13b5b011bc56e4d5bb99e91cda0db8b2bf34", 
+   "moduleName": "sdk/system/environment", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/events.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "68e178f6cec965d483f7262b661dee42574cf4e3bbac83fda12f5e0f730bfbad", 
+   "moduleName": "sdk/system/events", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../core/heritage": {
+     "path": "addon-sdk/lib/sdk/core/heritage.js"
+    }, 
+    "../core/namespace": {
+     "path": "addon-sdk/lib/sdk/core/namespace.js"
+    }, 
+    "../platform/xpcom": {
+     "path": "addon-sdk/lib/sdk/platform/xpcom.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/globals.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "2ec0c422a58cc5990924d579cf6299fc0fe130e4d1533926aea66fa7421ac98c", 
+   "moduleName": "sdk/system/globals", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../console/plain-text": {
+     "path": "addon-sdk/lib/sdk/console/plain-text.js"
+    }, 
+    "../system": {
+     "path": "addon-sdk/lib/sdk/system.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/runtime.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "e9ef8c81cb4ae966c53082c6851e52b07195ac48556f3cba90a6aa9b01ffe3aa", 
+   "moduleName": "sdk/system/runtime", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/unload.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "718af1d60a035568d417a64fc6a590802197c26dcc086fe05d5288fa83fe8739", 
+   "moduleName": "sdk/system/unload", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./events": {
+     "path": "addon-sdk/lib/sdk/system/events.js"
+    }, 
+    "@loader/unload": {
+     "path": "@loader/unload"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/system/xul-app.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "c33cd870e6c8252f9e312bffcb31e084b7cd7ee8c748bf6111e7c21e1a0f91f7", 
+   "moduleName": "sdk/system/xul-app", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/url.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "992687e2ce384e11c1214a47288edd20874f9349938856a1ef6384a0072a713e", 
+   "moduleName": "sdk/url", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "./base64": {
+     "path": "addon-sdk/lib/sdk/base64.js"
+    }, 
+    "./core/heritage": {
+     "path": "addon-sdk/lib/sdk/core/heritage.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/util/array.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "be7233b7acec240cf5f3c31ed3fa844efcb1f387ede9a7214eca6fa7c5e4cbb3", 
+   "moduleName": "sdk/util/array", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/util/deprecate.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "29261914cdbb944c6df930176913c3ab2f95e36d2c59a504e3156c3025b40dc0", 
+   "moduleName": "sdk/util/deprecate", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../console/traceback": {
+     "path": "addon-sdk/lib/sdk/console/traceback.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/util/object.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "8ea1e8dc75e695409846e6d359be30a1ee68fa8bf1d9b74e3fe1d1dded5185ac", 
+   "moduleName": "sdk/util/object", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/util/uuid.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "d8ed899037746abe248076469cf45888856c6399396482fcd8bcf2219e2453ab", 
+   "moduleName": "sdk/util/uuid", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/window/utils.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "8de90dbf9a226de59c8e2bbe432d327d1aa1a7fe53e669592e375eb6b34bf32e", 
+   "moduleName": "sdk/window/utils", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../deprecated/observer-service": {
+     "path": "addon-sdk/lib/sdk/deprecated/observer-service.js"
+    }, 
+    "../util/array": {
+     "path": "addon-sdk/lib/sdk/util/array.js"
+    }, 
+    "chrome": {
+     "path": "chrome"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/sdk/windows/observer.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "05ecf1775597100c2c85be07721fa215fa9a690d78842b6a169a42f7565eb13b", 
+   "moduleName": "sdk/windows/observer", 
+   "packageName": "addon-sdk", 
+   "requirements": {
+    "../deprecated/events": {
+     "path": "addon-sdk/lib/sdk/deprecated/events.js"
+    }, 
+    "../deprecated/events/assembler": {
+     "path": "addon-sdk/lib/sdk/deprecated/events/assembler.js"
+    }, 
+    "../deprecated/light-traits": {
+     "path": "addon-sdk/lib/sdk/deprecated/light-traits.js"
+    }, 
+    "../deprecated/window-utils": {
+     "path": "addon-sdk/lib/sdk/deprecated/window-utils.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }, 
+  "addon-sdk/lib/toolkit/loader.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "9def3b850a812b2eb80943f182e9fdcacb31cff8fa06d6279fbc71028dd26713", 
+   "moduleName": "toolkit/loader", 
+   "packageName": "addon-sdk", 
+   "requirements": {}, 
+   "sectionName": "lib"
+  }, 
+  "force-fill-forms/lib/main.js": {
+   "docsSHA256": null, 
+   "jsSHA256": "260526292000d4eb8356805c64aec5f86aab3f98e72cf9253317b2814359f7e1", 
+   "moduleName": "main", 
+   "packageName": "force-fill-forms", 
+   "requirements": {
+    "chrome": {
+     "path": "chrome"
+    }, 
+    "hotkeys": {
+     "path": "addon-sdk/lib/sdk/hotkeys.js"
+    }
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "force-fill-forms": {
+   "author": "Noitidart", 
+   "description": "Clicking icon in widget will force fill out the forms in the current tab.", 
+   "main": "main", 
+   "name": "force-fill-forms", 
+   "version": "initial.rev9"
+  }
+ }, 
+ "name": "force-fill-forms", 
+ "sdkVersion": "1.12", 
+ "staticArgs": {}, 
+ "verbose": false
+}
